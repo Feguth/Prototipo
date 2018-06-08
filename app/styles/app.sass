@@ -7,17 +7,23 @@
 @import "https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css"
 
 
-.icon
-  font-size: 1.6rem
-//   padding: 0.75rem
-//   margin: 0 auto
 .text-on-bottom
   flex-direction: column
 .side
   flex: 1
-  background-color: white
   > ul 
     display: flex
     list-style: none
-    justify-content:space-around
+    justify-content: space-around
     margin: 0 auto
+    > li
+      display:  flex
+      flex-direction:  column
+    .icon
+      font-size: 1.6rem
+      margin: 0 auto
+    .icon-text
+      z-index: 10
+      margin: 0 auto
+      margin-top: -0.25rem
+      font-size: small 

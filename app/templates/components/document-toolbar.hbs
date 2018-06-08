@@ -1,17 +1,48 @@
 <nav class="navbar">
   <div class="side">
-      <a class="button is-white">
-        <i class="navbar-item icon ion-ios-code"></i></a>
-      <a class="button is-white"><i class="navbar-item icon ion-ios-list"></i>Index</a>
+      <ul>
+        <li>
+          <a class="button is-white">
+            <i class="navbar-item icon ion-ios-home"></i>
+          </a>
+          <span class="icon-text">Home</span>
+        </li>
+        <li>
+          <a class="button is-white">
+            <i class="navbar-item icon ion-ios-barcode"></i>
+          </a>
+          <span class="icon-text">Document</span>
+        </li>
+      </ul>
+    
+      {{!-- <a class="button is-white"><i class="navbar-item icon ion-ios-list"></i>Index</a> --}}
   </div>
   <div style="flex: 2; display: flex; justify-content: center; background-color:yellow;">
     <p class="navbar-item doc-name flex-item"><i></i>Document name</p>
   </div>
   <div class="side">
-    <ul style="display: flex; justify-content:space-around; list-style: none">
-      <li><i class="nav-item icon ion-md-time" style="position:relative; left:16px"></i>Changes</li>
-      <li><i class="nav-item icon ion-ios-share" style="position:relative; left:5px"></i>Share</li>
-    </ul> 
+    <ul>
+      <li>
+        <a class="button is-white">
+          <i class="navbar-item icon ion-md-time"></i>
+        </a>
+        <span class="icon-text">Changes</span>
+      </li>
+      <li>
+        <a class="button is-white">
+          <i class="navbar-item icon ion-ios-share"></i>
+        </a>
+        <span class="icon-text">Share</span>
+      </li>
+      <li>
+        <a class="button is-white">
+          <i class="navbar-item icon fas fa-share-square"></i>
+        </a>
+        <span class="icon-text">Share</span>
+      </li>
+       
+    </ul>
+    
   </div>    
 </nav>
 
