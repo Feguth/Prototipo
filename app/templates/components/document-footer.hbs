@@ -1,19 +1,20 @@
 {{yield}}
-
-<div class="content" style="display: flex">teste</div>
-<div>
-    <footer class="footer" style="flex-shrink: 0"> 
-        <div class="dropdown is-up">
+<body style="display:flex; flex-direction:column; min-height: 100vh;">
+  <div class="content" style="flex:1 0 auto">
+    content
+  </div>
+  <footer class="footer" style="flex-shrink:0">
+      <div class="dropdown is-up">
             <div class="dropdown-trigger">
-                 <button class="button" aria-haspopup="true" aria-controls="dropdown-menu7">
-                    <span><img class="fa fa-user"></span>
+                 <button class="button has-icon is-white">
+                    <span><i class="button-item icon ion-ios-contact" style="margin: 0; font-size: 40px"></i></span>
                     <span>Felipe</span> 
                     <span class="icon is-small">
-                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <i class="fa fa-angle-up"></i>
                     </span>
                 </button>
             </div>
-            <div class="dropdown-menu" id="dropdown-menu7" role="menu">
+            <div class="box dropdown-menu" id="dropdown-menu7" role="menu">
                 <div class="dropdown-content">
                 <ul class="dropdown-menu" class="active">
                     <li><a href="#"><i class="fa fa-user"></i> <span class="dropdown-item">My Profile</span></a></li>
@@ -23,10 +24,8 @@
                 </div>
             </div>
         </div>
-        <!--<ul class="dropdown-menu" class="active">
-            <li><a href="#"><i class="fa fa-user"></i> <span>My Profile</span></a></li>
-            <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
-            <li><a href="#"><i class="fa fa-exit"></i> <span>Logout</span></a></li>
-        </ul>-->
-    </footer>
-</div>
+  </footer>
+  
+</body>
+
+
