@@ -9,13 +9,18 @@
         </li> --}}
         <li>
           <a class="button is-white">
-            <i class="navbar-item icon ion-ios-barcode"></i>
+            {{!-- <i class="navbar-item icon ion-ios-barcode"></i> --}}
+            <svg class="feather-icon">
+              <use xlink:href="feather-sprite.svg#file-text" />
+            </svg>
           </a>
           <span class="icon-text">Document</span>
         </li>
         <li>
           <a class="button is-white">
-            <i class="navbar-item icon ion-ios-list"></i>
+            <svg class="feather-icon">
+              <use xlink:href="feather-sprite.svg#list" />
+            </svg>
           </a>
           <span class="icon-text">Index</span>
         </li>
@@ -34,7 +39,10 @@
           <ul>
             <li>
               <a class="button is-white">
-                <i class="navbar-item icon ion-ios-home is-small"></i>
+                {{!-- <i class="navbar-item icon ion-ios-home is-small"></i> --}}
+                <svg class="feather-icon">
+                  <use xlink:href="feather-sprite.svg#home" />
+                </svg>
               </a>
             </li>
             <li>
@@ -48,8 +56,10 @@
       </li>
       <li>
         <a class="button is-white is-small branch">
-          <i class="navbar-item icon ion-md-git-branch"></i>
-          <span>master</span>
+          <svg class="is-small feather-icon">
+            <use xlink:href="feather-sprite.svg#git-branch" />
+          </svg>
+          <span class="icon-text"> master</span>
         </a>
       </li>
     </ul>
@@ -61,13 +71,17 @@
     <ul>
       <li>
         <a class="button is-white">
-          <i class="navbar-item icon ion-md-time"></i>
+          <svg class="feather-icon">
+            <use xlink:href="feather-sprite.svg#clock" />
+          </svg>
         </a>
         <span class="icon-text">Changes</span>
       </li>
       <li>
         <a class="button is-white">
-          <i class="navbar-item icon ion-ios-share"></i>
+          <svg class="feather-icon">
+            <use xlink:href="feather-sprite.svg#share" />
+          </svg>
         </a>
         <span class="icon-text">Share</span>
       </li>

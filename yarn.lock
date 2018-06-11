@@ -986,6 +986,10 @@ bluebird@^3.1.1, bluebird@^3.4.6:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
+blueimp-md5@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/blueimp-md5/-/blueimp-md5-2.10.0.tgz#02f0843921f90dca14f5b8920a38593201d6964d"
+
 body-parser@1.18.2:
   version "1.18.2"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.18.2.tgz#87678a19d84b47d859b83199bd59bce222b10454"
@@ -2499,6 +2503,13 @@ ember-inflector@^2.0.0:
   resolved "https://registry.yarnpkg.com/ember-inflector/-/ember-inflector-2.3.0.tgz#94797eba0eea98d902aa1e5da0f0aeef6053317f"
   dependencies:
     ember-cli-babel "^6.0.0"
+
+ember-initials@^3.12.2:
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/ember-initials/-/ember-initials-3.12.2.tgz#079682207c5eff99171f0dc08e19f07dcea23538"
+  dependencies:
+    blueimp-md5 "2.10.0"
+    ember-cli-babel "6.12.0"
 
 ember-load-initializers@^1.0.0:
   version "1.1.0"

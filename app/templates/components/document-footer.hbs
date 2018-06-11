@@ -1,89 +1,74 @@
-{{yield}}
+
 <div style="display: flex; align-items: center; position: absolute;bottom: 0; left: 0; right: 0; height:80px">
   
         <div style="flex: 1">
             <ul style="display:flex; justify-content:space-around">
                 <li style="display:flex" >
                     <button style="display:flex; color:white; border:none">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" 
-                        alt="Avatar" class="avatar" style="align-self:center; width:50px; height:50px; border-radius:50%">
-                        <p style="color:black; align-self: center; margin:7px; font-size:medium">Felipe</p>
+                        <span class="avatar">
+                            {{ember-initials/adorable 
+                                name = "Felipe Cerqueira Guth" 
+                                email="feguth@gmail.com" 
+                                size=200}}</span>
+                        <p style="color:black; align-self: center;  font-size:medium">ON LINE</p>
                     </button>
                 </li>
                 <li></li>
             </ul> </div>
         <div style="flex:2"></div>
-        <div style="flex:1; ">
-            <ul style="display:flex; justify-content:space-around">
-                <li><i style="font-size:small">Word count: 42</i></li>
+        <div class="side">
+            <ul>
+                <li>
+                    <svg class="feather-icon">
+                    <use xlink:href="feather-sprite.svg#check" />
+                    </svg>     
+                    <span class="icon-text">Saved</span>
+                </li>
+                <li><i style="font-size:small">W 42</i></li>
                 <li><button style="display:flex; color:white; border:none"><a href="#" class="icon ion-ios-help-circle-outline" style="font-size: 3rem;margin: 0; color:#606060"></a></button>
                     </li>
             </ul>
         </div>
-    
-
 </div>
 
-{{!<div style="display: flex; flex-direction: row; align-items: center">
-    <div class="container dropdown is-up" style="display:flex; justify-content:space-around">
-        <div>
-            <div class="dropdown-trigger" style="background-color:aquamarine">
-                <button class="button is-white">
-                <a href="">avatar</a> 
-                </button>
-            </div>
-            <div class="box dropdown-menu" id="dropdown-menu7" role="menu">
-                    <div class="dropdown-content">
-                    <ul class="dropdown-menu" class="active">
-                        <li><a href="#"><i class="fa fa-user"></i> <span class="dropdown-item">My Profile</span></a></li>
-                        <li><a href="#"><i class="fa fa-cog"></i> <span class="dropdown-item">Settings</span></a></li>
-                        <li><a href="#"><i class="fa fa-exit"></i> <span class="dropdown-item">Logout</span></a></li>
-                    </ul>       
-                    </div>
-            </div>
-        </div>
-            
-        <div>
-            <i style="justify-content:flex-end">word count</i>
-             
-            <button class="button is-white" style="justify-content:flex-end">
-                help
-            </button>
-        </div>
+{{!-- <nav class="navbar">
+    <div class="footer-side">
+        <ul>
+            <li>
+                <a class="is-white">
+                    <span class="avatar">{{ember-initials/gravatar name = "Fred Guth" email="fredguth@fredguth.com" size=200}}</span>
+                </a>
+                <span>&nbsp;&nbsp;ON LINE </span>
+            </li>
+
+        </ul>
     </div>
-</div>}}
+    <div class="centered">
+        
+    </div>
+    <div class="footer-side">
+        <ul>
+            <li>
+               
+                <svg class="feather-icon">
+                    <use xlink:href="feather-sprite.svg#check" />
+                </svg>     
+                <span class="icon-text">Saved</span>
+                
+            </li>
+            <li>
+                <span class="icon-text"> W 985</span>
+            </li>
+            <li>
+                <a class="button is-white">
+                    <svg class="feather-icon is-big">
+                        <use xlink:href="feather-sprite.svg#help-circle" />
+                    </svg>
+                </a>
+        
+            </li>
 
+        </ul>
 
-
-
-
-{{!<body style="display:flex; flex-direction:column; min-height: 100vh;">
-  <div class="content" style="flex:1 0 auto">
-    content
-  </div>
-  <footer class="footer" style="flex-shrink:0">
-      <div class="dropdown is-up">
-            <div class="dropdown-trigger">
-                 <button class="button has-icon is-white">
-                    <span><i class="button-item icon ion-ios-contact" style="margin: 0; font-size: 40px"></i></span>
-                    <span>Felipe</span> 
-                    <span class="icon is-small">
-                            <i class="fa fa-angle-up"></i>
-                    </span>
-                </button>
-            </div>
-            <div class="box dropdown-menu" id="dropdown-menu7" role="menu">
-                <div class="dropdown-content">
-                <ul class="dropdown-menu" class="active">
-                    <li><a href="#"><i class="fa fa-user"></i> <span class="dropdown-item">My Profile</span></a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i> <span class="dropdown-item">Settings</span></a></li>
-                    <li><a href="#"><i class="fa fa-exit"></i> <span class="dropdown-item">Logout</span></a></li>
-                </ul>       
-                </div>
-            </div>
-        </div>
-  </footer>
-  
-</body>}}
-
-
+    </div>
+</nav> --}}
