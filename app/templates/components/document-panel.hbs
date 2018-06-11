@@ -1,11 +1,20 @@
 {{yield}}
 {{!<aside class="menu">}}
 
-{{!<div class="container">  
+<div id="container" style="width: 25%;
+    border: 2px solid #778899;
+    padding: 2rem;
+    margin: 5px;">
+     <button style="position: absolute;
+    background: red;
+    color: white;
+    top: -10px;
+    right: -10px;">
+            X
+        </button>  
   <p class="heading" style="font-size:medium">Document
-
   </p>
-<div class="aside-block">
+<div>
     <p class="control has-icons-left">
       <input class="input is-small" type="text" placeholder="search">
       <span class="icon is-small is-left">
@@ -16,19 +25,28 @@
 
   <p class="menu-label">
     View
+    
     <ul class="menu-list">
-    <li><a>Write</a></li>
+    <li>
+        <a>Write</a>
+    </li> 
     <li><a>Preview</a></li>
   </ul>
   </p>
   <p class="menu-label">
-    Ambience
+    Mode
     <ul class="menu-list">
     <li><a>Night Owl</a></li>
     <li><a>Typewriter</a></li>
   </ul>
   </p>
-  
+  <p class="menu-label">
+    Ambience
+    <ul class="menu-list">
+    <li><a>Cafe in Paris</a></li>
+    <li><a>Rain</a></li>
+  </ul>
+  </p>
   <p class="menu-label">
     Statistics
     <ul class="menu-list">
@@ -45,8 +63,8 @@
     <li><a>Latex</a></li>
     <li><a>HTML</a></li>
   </ul>
-  </p>}}
-
+  </p>
+</div>
 
 {{!</aside>}}
 
