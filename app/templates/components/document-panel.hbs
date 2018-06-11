@@ -4,14 +4,17 @@
 <div class="box" id="container" style="width: 25%; 
     padding: 2rem;
     margin: 5px;
-    background-color:#FAFAFA; 
-    position:relative"
+    background-color:#FAFAFA;
+    position:absolute;
+    top:0"
     >
 <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;"></button>
-  <div style="display:flex; justify-content:space-between">  
-  <p class="heading" style="font-size:medium">Document
+    right: 0.5rem;top: 0.5rem;"></button>
+  <div style="display:flex">  
+  <svg class="feather-icon">
+              <use xlink:href="feather-sprite.svg#file-text" />
+            </svg>
+            <p style="font-size:medium; margin-bottom:0.5rem">Document
   </p>
   
   </div>
@@ -36,7 +39,8 @@
   </p>
   <p class="menu-label">
     Mode
-    <ul class="menu-list">
+    <ul class="menu-list" >
+    {{!-- <li style="display:flex"><a class="icon fa fa-moon"></a><a>Night Owl</a></li> --}}
     <li><a>Night Owl</a></li>
     <li><a>Typewriter</a></li>
   </ul>
