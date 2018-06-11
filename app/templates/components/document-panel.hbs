@@ -1,13 +1,20 @@
 {{yield}}
 
 
-<div id="container" style="width: 25%;
-    border: 2px solid #778899;
+<div class="box" id="container" style="width: 25%; 
     padding: 2rem;
-    margin: 5px;">
-      
+    margin: 5px;
+    background-color:#FAFAFA; 
+    position:relative"
+    >
+<button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;"></button>
+  <div style="display:flex; justify-content:space-between">  
   <p class="heading" style="font-size:medium">Document
   </p>
+  
+  </div>
 <div>
     <p class="control has-icons-left">
       <input class="input is-small" type="text" placeholder="search">
@@ -15,8 +22,8 @@
         <i class="fa fa-search" aria-hidden="true"></i>
       </span>
     </p>
-</div>
 
+</div>
   <p class="menu-label">
     View
     
