@@ -1,24 +1,27 @@
-{{yield}}
 
-
-<div class="box" id="container" style="width: 25%; 
-    padding: 2rem;
-    margin: 5px;
-    background-color:#FAFAFA;
-    position:absolute;
-    top:0"
+<div style="width: 25%;
+  padding: 2rem;
+  margin: 5px;
+  position: absolute;
+  bottom: 1rem;
+  top:0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+          box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem"
     >
-<button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; position: absolute;
-    right: 0.5rem;top: 0.5rem;"></button>
-  <div style="display:flex">  
-  <svg class="feather-icon">
-              <use xlink:href="feather-sprite.svg#file-text" />
-            </svg>
-            <p style="font-size:medium; margin-bottom:0.5rem">Document
-  </p>
+
+  <div style="display:flex; justify-content:space-between; align-items:center">
+    <svg class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
+    <p style="font-size:larger">Document</p>
+    <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large"></button>
+   </div>
   
-  </div>
-<div>
+  
+  
+<div style="margin-top:3rem; margin-bottom:3rem">
     <p class="control has-icons-left">
       <input class="input is-small" type="text" placeholder="search">
       <span class="icon is-small is-left">
@@ -27,53 +30,92 @@
     </p>
 
 </div>
-  <p class="menu-label">
+<div>
+<style>
+  .panel-menu {margin-top: 1rem}
+</style>
+  <p class="panel-menu">
     View
-    
-    <ul class="menu-list">
-    <li>
-        <a>Write</a>
+    <ul style="border-radius: 2px;
+  color:black;
+  display: block;
+  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
+    <li><a>Write</a> 
     </li> 
     <li><a>Preview</a></li>
   </ul>
   </p>
-  <p class="menu-label">
-    Mode
-    <ul class="menu-list" >
-    {{!-- <li style="display:flex"><a class="icon fa fa-moon"></a><a>Night Owl</a></li> --}}
-    <li><a>Night Owl</a></li>
-    <li><a>Typewriter</a></li>
-  </ul>
-  </p>
-  <p class="menu-label">
+
+  <p class="panel-menu">
     Ambience
-    <ul class="menu-list">
-    <li><a>Cafe in Paris</a></li>
+    <ul style="border-radius: 2px;
+  color:black;
+  display: block;
+  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
+    <li><a>Cafe in Paris</a> 
+    </li> 
     <li><a>Rain</a></li>
   </ul>
+
   </p>
-  <p class="menu-label">
+  
+  <p class="panel-menu">
     Statistics
-    <ul class="menu-list">
+    <ul style="border-radius: 2px;
+  color:black;
+  display: block;
+  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
     <li><a>Pages: 1</a></li>
     <li><a>Words: 42</a></li>
     <li><a>Sections:1</a></li>
+    <li><a>Time spent: 1h33m</a></li>
   </ul>
   </p>
-  <p class="menu-label">
+  <p class="panel-menu">
     Export
-    <ul class="menu-list">
-    <li><a>.pdf</a></li>
-    <li><a>.docx</a></li>
-    <li><a>Latex</a></li>
-    <li><a>HTML</a></li>
+    <ul style="border-radius: 2px;
+  color:black;
+  display: flex; /* esse aqui é diferente, os outros são block */
+  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
+    <div style="flex:50%">
+     <li>
+      <input type="radio" name="export" value="pdf">
+      <label class="container">.pdf</label>
+    </li>
+    
+    <li>
+      <input type="radio" name="export" value="docx">
+      <label class="container">.docx</label>
+    </li>
+    {{!-- <li>
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+      <label class="container">.pdf</label>
+    </li>
+    
+    <li>
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      <label class="container">.docx</label>
+    </li> --}}
+    </div>
+    <div style="flex:50%">
+    <li>
+      <input type="radio" name="export" value="latex">
+      <label class="container">LATEX</label>
+    </li>
+    <li>
+      <input type="radio" name="export" value="html">
+      <label class="container">HTML</label>
+      </li>
+      </div>
   </ul>
   </p>
   <div>
     <button class="button is-outlined is-fullwidth">Export</button>
   </div>
 </div>
-
+</div>
 
 
 
