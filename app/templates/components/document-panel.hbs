@@ -1,5 +1,5 @@
-
-<div style="width: 25%;
+<style>
+  .panel {width: 25%;
   padding: 2rem;
   margin: 5px;
   position: absolute;
@@ -10,73 +10,68 @@
           box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   display: block;
-  padding: 1.25rem"
-    >
+  padding: 1.25rem
+  }
+  .panel-menu {
+    margin-top: 1rem}
+
+  .panel-list {border-radius: 2px;
+  color: #4a4a4a;
+  display: block;
+  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem}
+  
+</style>
+
+<div class="panel">
 
   <div style="display:flex; justify-content:space-between; align-items:center">
     <svg class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
     <p style="font-size:larger">Document</p>
-    <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large"></button>
+    <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; color:#4a4a4a"></button>
    </div>
   
-  
-  
-<div style="margin-top:3rem; margin-bottom:3rem">
+{{!-- <div style="margin-top:3rem; margin-bottom:3rem">
     <p class="control has-icons-left">
       <input class="input is-small" type="text" placeholder="search">
       <span class="icon is-small is-left">
         <i class="fa fa-search" aria-hidden="true"></i>
       </span>
     </p>
+</div> --}}
 
-</div>
 <div>
-<style>
-  .panel-menu {margin-top: 1rem}
-</style>
-  <p class="panel-menu">
+
+  <p class="panel-menu" style="margin-top:2.5rem">
     View
-    <ul style="border-radius: 2px;
-  color:black;
-  display: block;
-  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
-    <li><a>Write</a> 
-    </li> 
-    <li><a>Preview</a></li>
+    <ul class="panel-list">
+    <li>Write</li> 
+    <li>Preview</li>
   </ul>
   </p>
 
-  <p class="panel-menu">
+  {{!-- <p class="panel-menu">
     Ambience
-    <ul style="border-radius: 2px;
-  color:black;
-  display: block;
-  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
+    <ul">
     <li><a>Cafe in Paris</a> 
     </li> 
     <li><a>Rain</a></li>
   </ul>
 
-  </p>
+  </p> --}}
   
   <p class="panel-menu">
     Statistics
-    <ul style="border-radius: 2px;
-  color:black;
-  display: block;
-  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
-    <li><a>Pages: 1</a></li>
-    <li><a>Words: 42</a></li>
-    <li><a>Sections:1</a></li>
-    <li><a>Time spent: 1h33m</a></li>
+    <ul class="panel-list">
+    <li>Pages: 1</li>
+    <li>Words: 42</li>
+    <li>Sections:1</li>
+    <li>Time spent: 1h33m</li>
   </ul>
   </p>
+  
   <p class="panel-menu">
     Export
-    <ul style="border-radius: 2px;
-  color:black;
-  display: flex; /* esse aqui é diferente, os outros são block */
-  padding: 0.5em 0.75em;font-size:0.9rem; line-height:1.75rem">
+    <ul class="panel-list" style="display: flex">
     <div style="flex:50%">
      <li>
       <input type="radio" name="export" value="pdf">
@@ -87,17 +82,6 @@
       <input type="radio" name="export" value="docx">
       <label class="container">.docx</label>
     </li>
-    {{!-- <li>
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-      <label class="container">.pdf</label>
-    </li>
-    
-    <li>
-      <input type="checkbox">
-      <span class="checkmark"></span>
-      <label class="container">.docx</label>
-    </li> --}}
     </div>
     <div style="flex:50%">
     <li>
@@ -112,7 +96,7 @@
   </ul>
   </p>
   <div>
-    <button class="button is-outlined is-fullwidth">Export</button>
+    <button class="button is-primary is-fullwidth">Export</button>
   </div>
 </div>
 </div>
