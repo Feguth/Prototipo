@@ -19,14 +19,13 @@
   display: block;
   padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
   
-  
 </style>
 
 <div class="panel">
 
-  <div style="display:flex; justify-content:space-between; align-items:center">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
     <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
-    <p style="font-size:larger; color:#262626">Document</p>
+    <p style="font-size:larger; color:#262626; padding-left:0.5rem">Document</p>
     <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; color:#262626"></button>
    </div>
   
@@ -38,31 +37,36 @@
       </span>
     </p>
 </div> --}}
+
 <hr style="background-color: #dbdbdb;
-  border: none;
   height: 1px;
   margin-left: -1.25rem;
-  margin-right: -1.25rem
+  margin-right: -1.25rem;
+  margin-top: 0.75rem
   ">
 
 <div>
 
   <p class="panel-menu" style="margin-top:2rem">
-    View
-    <ul style="display:flex; justify-content:space-around">
-    <li><a class="button is-info" style="border-radius: 290486px;font-size:0.9rem">Write</a></li> 
-    <li><a class="button is-light" style="border-radius: 290486px;font-size:0.9rem; color:#4a4a4a">Preview</a></li> 
+    View   
+    <div style="margin:0.75rem 0; font-size:0.9rem;">
+    <ul style="display:flex; justify-content:center">
+    <li><a class="button is-info" style="border-top-left-radius: 290486px;border-bottom-left-radius: 290486px; padding:0 3.75rem">
+    Write
+    </a></li> 
+    <li><a class="button is-light" style="border-top-right-radius: 290486px; border-bottom-right-radius: 290486px;color:#4a4a4a; padding:0 3.35rem">
+    Preview
+    </a></li> 
   </ul>
+  </div>
+  <div>
+    thumbnail
+  </div>
+  <div style="display:flex; justify-content:center; font-size: 0.9rem">
+    <button style="margin:1rem 0" class="button is-warning">Change Template</button>
+  </div>
   </p>
   
-  {{!-- <p class="panel-menu" style="margin-top:2rem">
-    View
-    <ul class="panel-list">
-    <li>Write</li> 
-    <li>Preview</li>
-  </ul>
-  </p> --}}
-
   {{!-- <p class="panel-menu">
     Ambience
     <ul">
@@ -81,12 +85,12 @@
     <div style="flex:50%">
      <li>
       <input type="radio" name="export" value="pdf" checked>
-      <label class="container">.pdf</label>
+      <label class="container">PDF</label>
     </li>
     
     <li>
       <input type="radio" name="export" value="docx">
-      <label class="container">.docx</label>
+      <label class="container">DOCX</label>
     </li>
     </div>
     <div style="flex:50%">
@@ -115,7 +119,8 @@
     <li>Pages: <span style="color:#929292">1</span></li>
     <li>Words: <span style="color:#929292">42</span></li>
     <li>Sections: <span style="color:#929292">1</span></li>
-    <li>Time spent: <span style="color:#929292">1h33m</span></li>
+    <li>Time spent by you: <span style="color:#929292">1h33m</span></li>
+    <li>Time spent overall: <span style="color:#929292">2h06m</span></li>
   </ul>
   </p>
 </div>
