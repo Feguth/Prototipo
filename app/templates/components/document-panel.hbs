@@ -1,27 +1,31 @@
 <style>
   .panel {width: 25%;
-  padding: 1.25rem;
-  margin: 5px;
-  position: absolute;
-  bottom: 1rem;
-  top:0;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-          box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #4a4a4a;
-  display: block;
-  }
+    padding: 1.25rem;
+    margin: 5px;
+    position: absolute;
+    bottom: 1rem;
+    top:0;
+    border-radius: 5px;
+    
+    color: #4a4a4a;
+    display: block;
+    }
+  .panel-left {
+    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    }
   .panel-menu {
     margin-top: 0.75rem}
 
   .panel-list {border-radius: 2px;
-  color: #707070;
-  display: block;
-  padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
-  
+    color: #707070;
+    display: block;
+    padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem
+    }
+    
 </style>
 
-<div class="panel">
+<div class="panel panel-left">
 
   <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
     <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
@@ -40,21 +44,22 @@
 
 <hr style="background-color: #dbdbdb;
   height: 1px;
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-  margin-top: 0.75rem
+  margin: 0.75rem -1.25rem 2rem 
   ">
 
 <div>
 
-  <p class="panel-menu" style="margin-top:2rem">
+  <p class="panel-menu">
     View   
     <div style="margin:0.75rem 0; font-size:0.9rem;">
     <ul style="display:flex; justify-content:center">
-    <li><a class="button is-info" style="border-top-left-radius: 290486px;border-bottom-left-radius: 290486px; padding:0 3.75rem">
-    Write
+    <li>      
+      <a class="button has-icon is-info" style="border-top-left-radius: 290486px;border-bottom-left-radius: 290486px; padding:0 2.75rem">
+    <svg style="stroke: currentColor; padding-right:0.25rem" class="feather-icon"><use xlink:href="feather-sprite.svg#feather" /></svg>Write
     </a></li> 
-    <li><a class="button is-light" style="border-top-right-radius: 290486px; border-bottom-right-radius: 290486px;color:#4a4a4a; padding:0 3.35rem">
+    <li>
+      <a class="button is-light" style="border-top-right-radius: 290486px; border-bottom-right-radius: 290486px;color:#4a4a4a; padding:0 2.25rem">
+      <svg style="stroke: currentColor; padding-right:0.25rem" class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
     Preview
     </a></li> 
   </ul>

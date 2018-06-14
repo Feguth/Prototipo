@@ -1,35 +1,59 @@
-
-<div class="box" id="container" style="width: 25%; 
-    padding: 2rem;
-    margin: 5px;
-    background-color:#FAFAFA;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0"
-    >
-<button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; position: absolute;
-    right: 0.5rem;top: 0.5rem;"></button>
-  <div style="display:flex">  
-  <svg class="feather-icon">
-              <use xlink:href="feather-sprite.svg#share" />
-            </svg>
-            <p style="font-size:medium; margin-bottom:0.5rem">Share
-  </p>
+<style>
+  .panel {width: 25%;
+  padding: 1.25rem;
+  margin: 5px;
+  position: absolute;
+  bottom: 1rem;
+  top:0;
+  border-radius: 5px;
   
-  </div>
+  color: #4a4a4a;
+  display: block;
+  
+  }
+  .panel-right {
+    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            box-shadow: -0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    right:0;
+  }
+  .panel-menu {
+    margin-top: 0.75rem}
 
-  <p class="menu-label">
+  .panel-list {border-radius: 2px;
+  color: #707070;
+  display: block;
+  padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
+  
+</style>
+
+<div class="panel panel-right">
+  
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
+      <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#share" /></svg>
+      <p style="font-size:larger; color:#262626; padding-left:0.5rem">Share</p>
+      <button style="background-color:inherit; border:none; color:#262626" >
+        <svg style="stroke: currentColor; vertical-align:middle" class="feather-icon"><use xlink:href="feather-sprite.svg#x" /></svg>
+      </button>
+    </div>
+
+
+  <hr style="background-color: #dbdbdb;
+    height: 1px;
+    margin: 0.75rem -1.25rem 2rem">
+
+<div>
+
+  <p class="panel-menu">
     Visibility
-    
-    <ul style="display:flex">
-      <li>
+    <div style="margin:0.75rem 0 1.25rem; font-size:0.9rem;">
+    <ul style="display:flex; justify-content:space-between">
+      <li style="display:flex; flex-direction:column; justify-content:center">
         <a class="button is-white">
           <svg class="feather-icon">
             <use xlink:href="feather-sprite.svg#lock" />
           </svg>
         </a>
-        <span class="icon-text">Private</span>
+        <span class="icon-text" style="margin:auto; color: #707070">Private</span>
       </li>
       <li style="display:flex; flex-direction:column; justify-content:center">
         <a class="button is-white">
@@ -37,22 +61,23 @@
             <use xlink:href="feather-sprite.svg#users" />
           </svg>
         </a>
-        <span class="icon-text">Workspace</span>
+        <span class="icon-text" style="margin:auto; color: #707070">Workspace</span>
       </li>
-       <li>
+      <li style="display:flex; flex-direction:column; justify-content:center">
         <a class="button is-white">
           <svg class="feather-icon">
             <use xlink:href="feather-sprite.svg#globe" />
           </svg>
         </a>
-        <span class="icon-text">Public</span>
+        <span class="icon-text" style="margin:auto; color: #707070">Public</span>
       </li>
     </ul>
+    </div>
   </p>
 
-  <p class="menu-label">
+  <p class="panel-menu">
     Access
-    <ul class="menu-list" >
+    <ul class="panel-list" >
         <li>
             <label class="checkbox">
                 <input type="checkbox">
@@ -70,31 +95,48 @@
             </label></li>
      </ul>
     <div>
-        <button class="button is-outlined is-fullwidth">Share</button>
+    <button style="margin:1rem 0" class="button is-primary is-fullwidth">Share</button>
     </div>
   </p>
-  <hr class="dropdown-divider">
-  <p class="menu-label">
+  
+  <hr style="background-color: #dbdbdb;
+  border: none;
+  height: 1px;
+  margin-top:2rem
+  ">
+
+  <p class="panel-menu">
     Share with Link
     <div>
-    <p class="control">
+    {{!-- <p class="control" style="margin:1rem 0">
       <input class="input is-small" type="text" placeholder="Link">
       
-    </p>
+    </p> --}}
 
 </div>
-    <div>
-        <button class="button is-outlined is-fullwidth"> Share with Link</button>
+     <div>
+    <button style="margin:1rem 0" class="button is-danger is-fullwidth">Copy link</button>
     </div>
     </p>
     
-    <hr class="dropdown-divider">
-    <p class="menu-label">
-    <ul class="menu-list">
+    <hr style="background-color: #dbdbdb;
+  border: none;
+  height: 1px;
+  margin-top:2rem
+  ">
+  
+    <p>
+    <ul class="panel-list">
         <li>Change requests (1)</li>
-        <li>Colaborators: Felipe and Fred</li>
+        <li>Colaborators:
+          <ul style="padding: 0 1rem">
+            <li>Felipe (author)</li>
+            <li>Fred</li>
+          </ul>
+        </li>
     </ul>
     </p>
+</div>
 </div>
     
     
