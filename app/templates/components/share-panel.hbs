@@ -9,6 +9,7 @@
   
   color: #4a4a4a;
   display: block;
+  overflow-y: scroll;
   
   }
   .panel-right {
@@ -108,13 +109,15 @@
   <p class="panel-menu">
     Share with Link
     
-    <div class="field has-addons" style="display:flex; justify-content:space-between; margin: 1.25rem 0 0">
-      <div class="control">
-        <input class="input" style="width:14.2rem" type="text" placeholder="http://onefinaldoc.com/873y4tbi7s3yitb7wy34it">
+    <div class="field has-addons" style="display:flex">
+      <div class="control" style="width: 75%">
+        <input class="input" type="text" placeholder="http://onefinaldoc.com/873y4tbi7s3yitb7wy34it">
       </div>
-      <div class="control">
-        <a class="button is-info">
-          Copy link
+      <div class="control" style="width: 25%">
+        <a class="button is-info is-fullwidth">
+          <svg class="feather-icon">
+            <use xlink:href="feather-sprite.svg#copy" />
+          </svg>
         </a>
       </div>
 
