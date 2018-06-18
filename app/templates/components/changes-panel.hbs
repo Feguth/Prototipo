@@ -10,7 +10,7 @@
   
   color: #4a4a4a;
   display: block;
-  overflow-y: scroll;
+  
   }
   .panel-right {
     -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
@@ -25,11 +25,20 @@
   display: block;
   padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
   
+  .card {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  padding: 0.5rem;
+  margin:0.4rem 0;
+  }
 </style>
 
 <div class="panel panel-right">
   
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem; top:0">
       <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#clock" /></svg>
       <p style="font-size:larger; color:#262626; padding-left:0.5rem">Changes</p>
       <button style="background-color:inherit; border:none; color:#262626" >
@@ -43,33 +52,135 @@
     margin: 0.75rem -1.25rem 2rem">
 
 
-<div class="tabs is-centered">
+<div class="tabs is-centered is-boxed" style="margin:-0.75rem -1.25rem 1.25rem; font-size:0.95rem">
   <ul>
     <li class="is-active">
-      <a>
-        <span class="icon is-small"><i class="fa fa-image" aria-hidden="true"></i></span>
-        <span>Unsolved</span>
+      <a style="color:#262626">
+          Requests
       </a>
     </li>
     <li>
-      <a>
-        <span class="icon is-small"><i class="fa fa-music" aria-hidden="true"></i></span>
-        <span>History</span>
+      <a style="color:#707070">
+        History
       </a>
     </li>
   </ul>
 </div>
-<div style="display:flex; flex-direction:column">
+
+{{!-- <div style="overflow-y:initial ">
     
-    <div class="box">
-        <div style="font-size:0.9rem; color:#4a4a4a; position: relative;
-    left: -5px;">
-        teste
+    <div class="card" >
+        <div style="font-size:0.9rem; color:#4a4a4a">
+        Paragraph 3, Line 2 <br>
+          <div style="font-size:0.75rem; margin-bottom:0.2rem">
+            <a href="">Felipe</a>
+          <time datetime="2018-6-12">12 Jun 2018 @11:09 PM</time>
+          </div>
+            <p style="text-align: center">
+              ...
+            </p>
+          
         </div>
     </div>
-    <div class="box" style>
-        teste
+    
+    <div class="card" style="background-color:#fcfbe7">
+      <div style="font-size:0.9rem; color:#4a4a4a; display: flex; justify-content:space-between">
+        <p>Paragraph 4, Line 1</p> 
+        <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+        </div>
+
+        <div style="font-size:0.70rem; margin-bottom:0.5rem">
+          <a href="">Fred</a>
+        <time datetime="2018-6-15">15 Jun 2018 @11:09 PM</time>
+        </div>
+          <div>
+          <p style="font-size:0.80rem; text-align:justify; margin:0.75rem 0">
+            Já ofendeu 
+            <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
+          </p>
+          </div>
+        
+        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
+          <a class="button is-success" style="width:33%">
+            <span class="icon is-small">
+              <i class="fa fa-check"></i>
+            </span>
+            <span>Accept</span>
+          </a>
+          <a class="button is-danger" style="width:33%">
+            <span>Reject</span>
+            <span class="icon is-small">
+              <i class="fa fa-times"></i>
+             </span>
+          </a>
+        </p>
     </div>
+   
+     <div class="card" style="background-color:#fcfbe7">
+      <div style="font-size:0.9rem; color:#4a4a4a; display: flex; justify-content:space-between">
+        <p>Paragraph 4, Line 1</p> 
+        <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+        </div>
+
+        <div style="font-size:0.70rem; margin-bottom:0.5rem">
+          <a href="">Fred</a>
+        <time datetime="2018-6-15">15 Jun 2018 @11:09 PM</time>
+        </div>
+          <div>
+          <p style="font-size:0.80rem; text-align:justify; margin:0.75rem 0">
+            (...) ofendeu o Ministro Fux e agora me ofende.
+            <font color="green" style="background-color:#e6f9cf">O senhor é a mistura do mal com o atraso e pitadas de psicopatia</font><br/>
+            
+          </p>
+          </div>
+        
+        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
+          <a class="button is-success" style="width:33%">
+            <span class="icon is-small">
+              <i class="fa fa-check"></i>
+            </span>
+            <span>Accept</span>
+          </a>
+          <a class="button is-danger" style="width:33%">
+            <span>Reject</span>
+            <span class="icon is-small">
+              <i class="fa fa-times"></i>
+             </span>
+          </a>
+        </p>
+    </div>
+
+    <div class="card" >
+        <div style="font-size:0.9rem; color:#4a4a4a">
+        Paragraph 6, Line 5 <br>
+          <div style="font-size:0.75rem; margin-bottom:0.2rem">
+            <a href="">Felipe</a>
+          <time datetime="2018-6-12">12 Jun 2018 @05:15 PM</time>
+          </div>
+            <p style="text-align: center">
+              ...
+            </p>
+          
+        </div>
+    </div>
+    <div class="card" >
+        <div style="font-size:0.9rem; color:#4a4a4a">
+        Paragraph 9, Line 1 <br>
+          <div style="font-size:0.75rem; margin-bottom:0.2rem">
+            <a href="">Felipe</a>
+          <time datetime="2018-6-12">12 Jun 2018 @05:15 PM</time>
+          </div>
+            <p style="text-align: center">
+              ...
+            </p>
+          
+        </div>
+    </div>
+</div> --}}
+<div style="font-size:0.9rem">
+  <a style="color:#262626">
+  <svg style="stroke: currentColor; padding-right:0.25rem; vertical-align:middle; " class="feather-icon"><use xlink:href="feather-sprite.svg#message-circle" /></svg>
+§3, L2, Felipe, 12/06/2018 @15:35</a>
 </div>
 
 </div>
