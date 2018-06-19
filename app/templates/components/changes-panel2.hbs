@@ -1,48 +1,111 @@
 
 <style>
-  .panel {width: 25%;
-  padding: 1.25rem;
-  margin: 5px;
-  position: absolute;
-  bottom: 1rem;
-  top:0;
-  border-radius: 5px;
-  
-  color: #4a4a4a;
-  display: block;
-  
-  }
-  .panel-right {
-    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: -0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    right:0;
-  }
-  .panel-menu {
-    margin-top: 0.75rem}
+    .panel {
+        width: 25%;
+        padding: 1.25rem;
+        margin: 5px;
+        position: absolute;
+        bottom: 1rem;
+        top:0;
+        border-radius: 5px;
+        color: #4a4a4a;
+        display: block
+        }
+    .panel-right {
+        -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+        box-shadow: -0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+        right:0;
+        }
+    .panel-headingx {
+        display:flex; 
+        justify-content:space-between; 
+        align-items:center; 
+        margin-top: -0.5rem; 
+        top:0
+        }
 
-  .panel-list {border-radius: 2px;
-  color: #707070;
-  display: block;
-  padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
-  
-  .card {
-  background-color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #4a4a4a;
-  padding: 0.5rem;
-  margin:0.4rem 0;
-  }
-  .comment {
-    border-radius: 20px; 
-    background-color:#e6f9cf
-  }
+    .panel-menu {
+        margin-top: 0.75rem}
+
+    .panel-list {
+        border-radius: 2px;
+        color: #707070;
+        display: block;
+        padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
+    
+    .card {
+        background-color: white;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+                box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+        color: #4a4a4a;
+        padding: 0.5rem;
+        margin:0.4rem 0;
+        }
+    .comment {
+        border-radius: 20px; 
+        background-color:#e6f9cf
+        }
+    
+    .card-heading {
+        font-size:0.9rem; 
+        color:#4a4a4a; 
+        display:flex; 
+        justify-content:space-between
+    }
+
+    .card-body {
+        font-size:0.9rem; 
+        margin-bottom:0.2rem; 
+        text-align:justify; 
+        padding:0.5rem
+    }
+
+    .card-timestamp {
+        text-align:right; 
+        font-size:0.75rem; 
+        margin:0 0.5rem 0.2rem
+    }
+
+    hr {
+        background-color: #dbdbdb;
+        height: 1px;
+        margin: 0.75rem -1.25rem 0rem
+        }
+    .date-sticker {
+        margin:0.9rem auto; 
+        font-size:0.75rem; 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0.5rem; 
+        z-index: 1;
+        border-radius: 10px; 
+        color:#4a4a4a; 
+        background-color:whitesmoke ;
+        padding:0; 
+        width: 8rem;
+        text-align: center
+    }
+    .panel-comment-maker {
+        position:fixed; 
+        right:0; 
+        bottom:1rem; 
+        width: 25%;
+        margin:5px; 
+        border-radius: 0 0 5px 5px; 
+        z-index:10; 
+        display:flex; 
+        background-color: white; 
+        padding:0.5rem 1.25rem; 
+        border-top:1px solid #dbdbdb; 
+        color: #4a4a4a; 
+        font-size: 0.95rem
+    }
 </style>
 
 <div class="panel panel-right">
   
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem; top:0">
+  <div class="panel-headingx">
       <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#clock" /></svg>
       <p style="font-size:larger; color:#262626; padding-left:0.5rem">Paragraph 4</p>
       <button style="background-color:inherit; border:none; color:#262626" >
@@ -51,117 +114,104 @@
     </div>
 
 
-  <hr style="background-color: #dbdbdb;
-    height: 1px;
-    margin: 0.75rem -1.25rem 0rem">
+  <hr>
 
-<div  style="margin:0.9rem 0; font-size:0.75rem; display:flex; justify-content:center; position: -webkit-sticky;
-    position: sticky;
-    top: 0.5rem; z-index: 1">
-    <div style="border-radius: 30px; color:#4a4a4a; background-color:whitesmoke ;padding:0 2.25rem; width:fit-content">
+<div  class="date-sticker">
   <time datetime="2018-6-12" style="text-align:center; position:sticky">12 Jun 2018</time>
-  </div>
 </div>
 
 <div style="overflow-y:initial">
     
     <div class="card comment" >
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+        <div class="card-heading">
             <a href="">Felipe</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
         
-        <div style="font-size:0.9rem; margin-bottom:0.2rem">
-            <p style="text-align:justify">
-            Blá blá blá ...
+        <div class="card-body">
+            <p>Blá blá blá ...  
             </p>
         </div>
 
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time datetime="2018-6-12">11:09 PM</time>
         </div>
 
     </div>
     
     
     <div class="card">
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+        <div class="card-heading">
             <a href="">Fred</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
         
-        <div>
-          <p style="font-size:0.9rem; text-align:justify">
-            Já ofendeu 
+        <div class="card-body">
+            <p>Já ofendeu 
             <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
-          </p>
+            </p>
         </div>
         
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time datetime="2018-6-12">11:09 PM</time>
         </div>
         
-        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
-          <a class="button is-success" style="width:33%">
+        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+          <a class="button is-success is-small" style="width:5rem">
             <span class="icon is-small">
               <i class="fa fa-check"></i>
             </span>
             <span>Accept</span>
           </a>
-          <a class="button is-danger" style="width:33%">
+          <a class="button is-danger is-small" style="width:5rem">
             <span>Reject</span>
             <span class="icon is-small">
               <i class="fa fa-times"></i>
              </span>
           </a>
-        </p>
+        </div>
     </div>
 
     <div class="card">
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+        <div class="card-heading">
             <a href="">Fred</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
         
-        <div>
-          <p style="font-size:0.9rem; text-align:justify; margin:0.75rem 0">
+        <div class="card-body">
+          <p>
             (...) ofendeu o Ministro Fux e agora me ofende.
             <font color="green" style="background-color:#e6f9cf">O senhor é a mistura do mal com o atraso e pitadas de psicopatia</font><br/>
           </p>
         </div>
         
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem" datetime="2018-6-12">11:09 PM</time>
         </div>
         
-        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
-          <a class="button is-success" style="width:33%">
+        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+          <a class="button is-success is-small" style="width:5rem">
             <span class="icon is-small">
               <i class="fa fa-check"></i>
             </span>
             <span>Accept</span>
           </a>
-          <a class="button is-danger" style="width:33%">
+          <a class="button is-danger is-small" style="width:5rem">
             <span>Reject</span>
             <span class="icon is-small">
               <i class="fa fa-times"></i>
              </span>
           </a>
-        </p>
+        </div>
     </div>
    
     
-    <div style="margin:0.9rem 0; font-size:0.75rem; display:flex; justify-content:center; position: -webkit-sticky;
-    position: sticky;
-    top: 0.5rem;
-    z-index: 1">
-<div style="border-radius: 30px; color:#4a4a4a; background-color:whitesmoke ;padding:0 2.25rem; width:fit-content; position:sticky">
-  <time datetime="today" style="text-align:center; position:sticky">Today</time>
-  </div>
-</div>
+    <div class="date-sticker">
+        <time datetime="today" style="text-align:center; position:sticky">Today</time>
+    </div>
      
      <div class="card comment" >
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+        <div class="card-heading">
             <a href="">Felipe</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
@@ -172,15 +222,15 @@
             </p>
         </div>
 
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time datetime="2018-6-12">11:09 PM</time>
         </div>
 
     </div>
     
     
     <div class="card">
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+        <div class="card-heading">
             <a href="">Fred</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
@@ -192,34 +242,34 @@
           </p>
         </div>
         
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time datetime="2018-6-12">11:09 PM</time>
         </div>
         
-        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
-          <a class="button is-success" style="width:33%">
+        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+          <a class="button is-success is-small" style="width:5rem">
             <span class="icon is-small">
               <i class="fa fa-check"></i>
             </span>
             <span>Accept</span>
           </a>
-          <a class="button is-danger" style="width:33%">
+          <a class="button is-danger is-small" style="width:5rem">
             <span>Reject</span>
             <span class="icon is-small">
               <i class="fa fa-times"></i>
              </span>
           </a>
-        </p>
+        </div>
     </div>
 
-    <div class="card">
-        <div style="font-size:0.9rem; color:#4a4a4a; display:flex; justify-content:space-between">
+    <div class="card" style="margin-bottom:5rem">
+        <div class="card-heading">
             <a href="">Fred</a>
             <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
         </div> 
         
-        <div>
-          <p style="font-size:0.9rem; text-align:justify; margin:0.75rem 0">
+        <div class="card-body">
+          <p>
             Isso não tem nada a ver com o que está sendo julgado aqui. Fazer um comício com ofensas, grosserias. 
               Não consegue articular um argumento. A vida para vossa excelência é ofender as pessoas. Não tem uma ideia. 
               Só ofende as pessoas. Qual a sua proposta? Nenhuma, Nenhuma. Bílis, ódio, mau sentimento, mau secreto. 
@@ -231,36 +281,36 @@
           </p>
         </div>
         
-        <div style="text-align:right"><time  style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem"
-          datetime="2018-6-12">11:09 PM</time>
+        <div class="card-timestamp">
+            <time datetime="2018-6-12">11:09 PM</time>
         </div>
         
-        <p class="buttons" style="display:flex; justify-content:space-between; margin: 0.5rem 0">
-          <a class="button is-success" style="width:33%">
+        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+          <a class="button is-success is-small" style="width:5rem">
             <span class="icon is-small">
               <i class="fa fa-check"></i>
             </span>
             <span>Accept</span>
           </a>
-          <a class="button is-danger" style="width:33%">
+          <a class="button is-danger is-small" style="width:5rem">
             <span>Reject</span>
             <span class="icon is-small">
               <i class="fa fa-times"></i>
              </span>
           </a>
-        </p>
+        </div>
     </div>
     
 </div>
 
-<div class="box" style="margin:0.5rem -1.25rem -1.25rem; border-radius:0; bottom: 1rem; z-index:1; display:flex; ">
-<p style="width:80%">teste</p>
-<a class="button is-success">
-            <span class="icon is-small">
-              <i class="fa fa-check"></i>
-            </span>
-            <span>Send</span>
-          </a>
+<div class="panel-comment-maker">
+    <p>teste kkjhsd ksjdhf ksjdhf kjshef ksjdhf ksjdhf ksjhdf ksjdh kjhsf kjhsd</p>
+    <a class="button is-success" style="width:5rem; margin: 0 0 auto auto">
+        <span class="icon is-small">
+            <i class="fa fa-check"></i>
+        </span>
+        <span>Send</span>
+    </a>
 
 </div>
 
