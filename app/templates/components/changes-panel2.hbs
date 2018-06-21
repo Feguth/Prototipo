@@ -78,7 +78,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0.5rem; 
-        z-index: 1;
+        z-index: 5;
         border-radius: 10px; 
         color:#4a4a4a; 
         background-color:whitesmoke ;
@@ -107,7 +107,7 @@
   
   <div class="panel-headingx">
       <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#clock" /></svg>
-      <p style="font-size:larger; color:#262626; padding-left:0.5rem">Paragraph 4</p>
+      <p style="font-size:larger; color:#262626; padding-left:0.5rem">Changes</p>
       <button style="background-color:inherit; border:none; color:#262626" >
         <svg style="stroke: currentColor; vertical-align:middle" class="feather-icon"><use xlink:href="feather-sprite.svg#x" /></svg>
       </button>
@@ -116,203 +116,243 @@
 
   <hr>
 
-<div  class="date-sticker">
-  <time datetime="2018-6-12" style="text-align:center; position:sticky">12 Jun 2018</time>
-</div>
+    <div class="tabs is-centered is-boxed" style="margin:0.75rem -1.25rem 1rem; font-size:0.9rem">
+    <ul>
+        <li class="is-active">
+        <a style="color:#262626">
+            Requests
+        </a>
+        </li>
+        <li>
+        <a style="color:#707070">
+            History
+        </a>
+        </li>
+    </ul>
+    </div>
+
 
 <div style="overflow-y:initial">
-    
-    <div class="card comment" >
-        <div class="card-heading">
-            <a href="">Felipe</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
-        <div class="card-body">
-            <p>Blá blá blá ...  
-            </p>
-        </div>
-
-        <div class="card-timestamp">
-            <time datetime="2018-6-12">11:09 PM</time>
-        </div>
-
-    </div>
-    
-    
-    <div class="card">
-        <div class="card-heading">
-            <a href="">Fred</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
-        <div class="card-body">
-            <p>Já ofendeu 
-            <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
-            </p>
-        </div>
-        
-        <div class="card-timestamp">
-            <time datetime="2018-6-12">11:09 PM</time>
-        </div>
-        
-        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
-          <a class="button is-success is-small" style="width:5rem">
-            <span class="icon is-small">
-              <i class="fa fa-check"></i>
-            </span>
-            <span>Accept</span>
-          </a>
-          <a class="button is-danger is-small" style="width:5rem">
-            <span>Reject</span>
-            <span class="icon is-small">
-              <i class="fa fa-times"></i>
-             </span>
-          </a>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-heading">
-            <a href="">Fred</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
-        <div class="card-body">
-          <p>
-            (...) ofendeu o Ministro Fux e agora me ofende.
-            <font color="green" style="background-color:#e6f9cf">O senhor é a mistura do mal com o atraso e pitadas de psicopatia</font><br/>
-          </p>
-        </div>
-        
-        <div class="card-timestamp">
-            <time style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem" datetime="2018-6-12">11:09 PM</time>
-        </div>
-        
-        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
-          <a class="button is-success is-small" style="width:5rem">
-            <span class="icon is-small">
-              <i class="fa fa-check"></i>
-            </span>
-            <span>Accept</span>
-          </a>
-          <a class="button is-danger is-small" style="width:5rem">
-            <span>Reject</span>
-            <span class="icon is-small">
-              <i class="fa fa-times"></i>
-             </span>
-          </a>
-        </div>
-    </div>
-   
-    
-    <div class="date-sticker">
-        <time datetime="today" style="text-align:center; position:sticky">Today</time>
-    </div>
-     
-     <div class="card comment" >
-        <div class="card-heading">
-            <a href="">Felipe</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
-        <div style="font-size:0.9rem; margin-bottom:0.2rem">
-            <p style="text-align:justify">
-            Blá blá blá ...
-            </p>
-        </div>
-
-        <div class="card-timestamp">
-            <time datetime="2018-6-12">11:09 PM</time>
-        </div>
-
-    </div>
-    
-    
-    <div class="card">
-        <div class="card-heading">
-            <a href="">Fred</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
+    <div style="font-size:0.9rem">
         <div>
-          <p style="font-size:0.9rem; text-align:justify">
-            Já ofendeu 
-            <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
-          </p>
+            <a> Paragraph 1
+            <svg style="stroke: currentColor; padding-right:0.25rem; vertical-align:middle; height:1rem" class="feather-icon"><use xlink:href="feather-sprite.svg#message-circle" /></svg>
+            </a>
+            <button style="background-color:inherit; border:none; stroke: currentColor; position:absolute; right:1.25rem" >
+            <svg class="feather-icon"><use xlink:href="feather-sprite.svg#plus" /></svg>
+            </button>
         </div>
-        
-        <div class="card-timestamp">
-            <time datetime="2018-6-12">11:09 PM</time>
+        <div>
+            <a> Paragraph 3
+            <svg style="stroke: currentColor; padding-right:0.25rem; vertical-align:middle; height:1rem" class="feather-icon"><use xlink:href="feather-sprite.svg#edit-3" /></svg>
+            <svg style="stroke: currentColor; padding-right:0.25rem; vertical-align:middle; height:1rem" class="feather-icon"><use xlink:href="feather-sprite.svg#edit-3" /></svg>
+            <svg style="stroke: currentColor; padding-right:0.25rem; vertical-align:middle; height:1rem" class="feather-icon"><use xlink:href="feather-sprite.svg#message-circle" /></svg>
+            </a>
+            <button style="background-color:inherit; border:none; stroke: currentColor; position:absolute; right:1.25rem" >
+            <svg class="feather-icon"><use xlink:href="feather-sprite.svg#plus" /></svg>
+            </button>
         </div>
-        
-        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
-          <a class="button is-success is-small" style="width:5rem">
-            <span class="icon is-small">
-              <i class="fa fa-check"></i>
-            </span>
-            <span>Accept</span>
-          </a>
-          <a class="button is-danger is-small" style="width:5rem">
-            <span>Reject</span>
-            <span class="icon is-small">
-              <i class="fa fa-times"></i>
-             </span>
-          </a>
-        </div>
+      
     </div>
+    <div>
+        <div>
+            Paragraph 4
+        </div>
+        <div  class="date-sticker">
+        <time datetime="2018-6-12" style="text-align:center; position:sticky">12 Jun 2018</time>
+        </div>  
+        
+        <div class="card comment" >
+            <div class="card-heading">
+                <a href="">Felipe</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div class="card-body">
+                <p>Blá blá blá ...  
+                </p>
+            </div>
 
-    <div class="card" style="margin-bottom:5rem">
-        <div class="card-heading">
-            <a href="">Fred</a>
-            <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
-        </div> 
-        
-        <div class="card-body">
-          <p>
-            Isso não tem nada a ver com o que está sendo julgado aqui. Fazer um comício com ofensas, grosserias. 
-              Não consegue articular um argumento. A vida para vossa excelência é ofender as pessoas. Não tem uma ideia. 
-              Só ofende as pessoas. Qual a sua proposta? Nenhuma, Nenhuma. Bílis, ódio, mau sentimento, mau secreto. 
-              É uma coisa horrível. Vossa excelência nos envergonha, é uma desonra para o tribunal, para todos nós. 
-              Temperamento agressivo, grosseiro, rude. É péssimo isso. Conviver com vossa excelência. 
-              Vossa excelência sozinho desmoraliza o tribunal. É ruim, penoso ter que conviver com vossa excelência aqui. 
-              Não tem ideia. Não tem patriotismo. Está sempre atrás de interesse que não é o da Justiça. É uma coisa horrorosa. 
-              Constrangimento, é muito feio isso. Isso é o Supremo Tribunal Federal.
-          </p>
+            <div class="card-timestamp">
+                <time datetime="2018-6-12">11:09 PM</time>
+            </div>
+
         </div>
         
-        <div class="card-timestamp">
-            <time datetime="2018-6-12">11:09 PM</time>
+        
+        <div class="card">
+            <div class="card-heading">
+                <a href="">Fred</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div class="card-body">
+                <p>Já ofendeu 
+                <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
+                </p>
+            </div>
+            
+            <div class="card-timestamp">
+                <time datetime="2018-6-12">11:09 PM</time>
+            </div>
+            
+            <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+            <a class="button is-success is-small" style="width:5rem">
+                <span class="icon is-small">
+                <i class="fa fa-check"></i>
+                </span>
+                <span>Accept</span>
+            </a>
+            <a class="button is-danger is-small" style="width:5rem">
+                <span>Reject</span>
+                <span class="icon is-small">
+                <i class="fa fa-times"></i>
+                </span>
+            </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-heading">
+                <a href="">Fred</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div class="card-body">
+            <p>
+                (...) ofendeu o Ministro Fux e agora me ofende.
+                <font color="green" style="background-color:#e6f9cf">O senhor é a mistura do mal com o atraso e pitadas de psicopatia</font><br/>
+            </p>
+            </div>
+            
+            <div class="card-timestamp">
+                <time style="text-align:right;font-size:0.75rem; margin-bottom:0.2rem" datetime="2018-6-12">11:09 PM</time>
+            </div>
+            
+            <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+            <a class="button is-success is-small" style="width:5rem">
+                <span class="icon is-small">
+                <i class="fa fa-check"></i>
+                </span>
+                <span>Accept</span>
+            </a>
+            <a class="button is-danger is-small" style="width:5rem">
+                <span>Reject</span>
+                <span class="icon is-small">
+                <i class="fa fa-times"></i>
+                </span>
+            </a>
+            </div>
+        </div>
+    
+        
+        <div class="date-sticker">
+            <time datetime="today" style="text-align:center; position:sticky">Today</time>
         </div>
         
-        <div style="display:flex; justify-content:space-between; margin: 0.5rem">
-          <a class="button is-success is-small" style="width:5rem">
-            <span class="icon is-small">
-              <i class="fa fa-check"></i>
-            </span>
-            <span>Accept</span>
-          </a>
-          <a class="button is-danger is-small" style="width:5rem">
-            <span>Reject</span>
-            <span class="icon is-small">
-              <i class="fa fa-times"></i>
-             </span>
-          </a>
+        <div class="card comment" >
+            <div class="card-heading">
+                <a href="">Felipe</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div style="font-size:0.9rem; margin-bottom:0.2rem">
+                <p style="text-align:justify">
+                Blá blá blá ...
+                </p>
+            </div>
+
+            <div class="card-timestamp">
+                <time datetime="2018-6-12">11:09 PM</time>
+            </div>
+
+        </div>
+        
+        
+        <div class="card">
+            <div class="card-heading">
+                <a href="">Fred</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div>
+            <p style="font-size:0.9rem; text-align:justify">
+                Já ofendeu 
+                <font color="red" style="background:pink"><s>a presidenta</s></font><font color="green" style="background-color:#e6f9cf">o presidente</font>, ofendeu o ministro Fux, e agora me ofende. 
+            </p>
+            </div>
+            
+            <div class="card-timestamp">
+                <time datetime="2018-6-12">11:09 PM</time>
+            </div>
+            
+            <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+            <a class="button is-success is-small" style="width:5rem">
+                <span class="icon is-small">
+                <i class="fa fa-check"></i>
+                </span>
+                <span>Accept</span>
+            </a>
+            <a class="button is-danger is-small" style="width:5rem">
+                <span>Reject</span>
+                <span class="icon is-small">
+                <i class="fa fa-times"></i>
+                </span>
+            </a>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom:5rem">
+            <div class="card-heading">
+                <a href="">Fred</a>
+                <button class="button icon is-small" style="border:none; background-color:inherit"><i class="fa fa-reply" aria-hidden="true"></i></button>
+            </div> 
+            
+            <div class="card-body">
+            <p>
+                Isso não tem nada a ver com o que está sendo julgado aqui. Fazer um comício com ofensas, grosserias. 
+                Não consegue articular um argumento. A vida para vossa excelência é ofender as pessoas. Não tem uma ideia. 
+                Só ofende as pessoas. Qual a sua proposta? Nenhuma, Nenhuma. Bílis, ódio, mau sentimento, mau secreto. 
+                É uma coisa horrível. Vossa excelência nos envergonha, é uma desonra para o tribunal, para todos nós. 
+                Temperamento agressivo, grosseiro, rude. É péssimo isso. Conviver com vossa excelência. 
+                Vossa excelência sozinho desmoraliza o tribunal. É ruim, penoso ter que conviver com vossa excelência aqui. 
+                Não tem ideia. Não tem patriotismo. Está sempre atrás de interesse que não é o da Justiça. É uma coisa horrorosa. 
+                Constrangimento, é muito feio isso. Isso é o Supremo Tribunal Federal.
+            </p>
+            </div>
+            
+            <div class="card-timestamp">
+                <time datetime="2018-6-12">11:09 PM</time>
+            </div>
+            
+            <div style="display:flex; justify-content:space-between; margin: 0.5rem">
+            <a class="button is-success is-small" style="width:5rem">
+                <span class="icon is-small">
+                <i class="fa fa-check"></i>
+                </span>
+                <span>Accept</span>
+            </a>
+            <a class="button is-danger is-small" style="width:5rem">
+                <span>Reject</span>
+                <span class="icon is-small">
+                <i class="fa fa-times"></i>
+                </span>
+            </a>
+            </div>
         </div>
     </div>
-    
 </div>
 
-<div class="panel-comment-maker">
+{{!-- <div class="panel-comment-maker">
     <p>teste kkjhsd ksjdhf ksjdhf kjshef ksjdhf ksjdhf ksjhdf ksjdh kjhsf kjhsd</p>
-    <a class="button is-success" style="width:5rem; margin: 0 0 auto auto">
-        <span class="icon is-small">
-            <i class="fa fa-check"></i>
-        </span>
-        <span>Send</span>
+    <a class="button is-success is-small" style="margin-left:1rem">
+        <span class="icon is-small" style="margin:0 auto">
+            <i class="fa fa-send"></i>
+        </span><br/>
+        
     </a>
 
-</div>
+</div> --}}
 
 
 </div>
