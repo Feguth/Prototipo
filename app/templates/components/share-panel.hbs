@@ -44,7 +44,7 @@
 
 <div>
 
-  <p class="panel-menu">
+  {{!-- <p class="panel-menu">
     Visibility
     <div style="margin:0.75rem 0 1.25rem; font-size:0.9rem;">
     <ul style="display:flex; justify-content:space-between">
@@ -74,10 +74,50 @@
       </li>
     </ul>
     </div>
-  </p>
+  </p> --}}
 
   <p class="panel-menu">
-    Access
+    Sharing Status
+    <div style="display:flex">
+    <div class="is-rounded" style="background:rgb(253, 168, 168); width:fit-content; padding:0 0.75rem; border-radius:25px; margin:0.2rem 0 0 1rem">
+      Fred
+      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
+      </button>
+    </div>
+      <span class="icon is-small" style="margin:auto 0.2rem">
+        <i class="fa fa-user"></i>
+        </span>
+    </div>
+    <div style="display:flex">
+      <div class="is-rounded" style="background:rgb(255, 178, 105); width:fit-content; padding:0 0.75rem; border-radius:25px;  margin:0.2rem 0 0 1rem">
+      Stocche Forbes
+      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
+      </button>
+      </div>
+      <span class="icon is-small" style="margin:auto 0.2rem">
+        <i class="fa fa-industry"></i>
+        </span>
+    </div>
+    <div style="display:flex">
+    <div class="is-rounded" style="background:rgb(182, 213, 248); width:fit-content; padding:0 0.75rem; border-radius:25px;  margin:0.2rem 0 0 1rem">
+      Jurídico
+      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
+      </button>
+    </div>
+    <span class="icon is-small" style="margin:auto 0.2rem">
+        <i class="fa fa-users"></i>
+        </span>
+    </div>
+  </p>
+
+<hr style="background-color: #dbdbdb;
+  border: none;
+  height: 1px;
+  margin-top:2rem
+  ">
+
+  <p class="panel-menu">
+    Share
     <ul class="panel-list" >
         <li>
             <label class="checkbox">
@@ -95,16 +135,17 @@
                     Edit
             </label></li>
      </ul>
+    
+    <div class="control" style="width: 100%">
+        <input class="input" type="text" placeholder="Team member">
+      </div>
+    
     <div>
     <button style="margin:1rem 0" class="button is-primary is-fullwidth">Share</button>
     </div>
   </p>
   
-  <hr style="background-color: #dbdbdb;
-  border: none;
-  height: 1px;
-  margin-top:2rem
-  ">
+  
 
   <p class="panel-menu">
     Share with Link
@@ -128,24 +169,9 @@
     </div> --}}
 
   </p>
-    
-    <hr style="background-color: #dbdbdb;
-  border: none;
-  height: 1px;
-  margin-top:2rem
-  ">
+   
   
-    <p>
-    <ul class="panel-list">
-        <li>Change requests (1)</li>
-        <li>Colaborators:
-          <ul style="padding: 0 1rem">
-            <li>Felipe (author)</li>
-            <li>Fred</li>
-          </ul>
-        </li>
-    </ul>
-    </p>
+    
 </div>
 </div>
     
