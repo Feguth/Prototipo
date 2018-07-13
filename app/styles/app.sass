@@ -1,3 +1,6 @@
+$primary: #314882
+$primary-invert: white
+
 @import "ember-bulma-css/utilities/_all"
 @import "ember-bulma-css/base/_all"
 @import "ember-bulma-css/elements/_all"
@@ -6,8 +9,10 @@
 @import "ember-bulma-css/layout/_all"
 @import "https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css"
 
+
 *
   box-sizing: border-box
+
 
 
 
@@ -68,13 +73,19 @@ body
 .feather-icon
   width: 1.5rem
   height: 1.5rem
-  stroke: Navy
+  stroke: $primary
   stroke-width: 2
   stroke-linecap: round
   stroke-linejoin: round
   fill: none
 
+h1
+  font-weight: 500
+
 svg
+  &.smaller
+    width: 1.1rem
+    height: 1.1rem 
   &.is-small
     width: .85rem
     height: .85rem
@@ -82,7 +93,7 @@ svg
   &.is-big
     width: 2.5rem
     height: 2.5rem
-    stroke: DimGray
+  
 
 .footer-side
   margin: 2rem
@@ -94,3 +105,71 @@ svg
         display:  flex
         flex-direction:  row
         align-items: center
+
+.panel 
+  width: 25%
+  background-color: #f7f5f1
+  padding: 1.25rem
+  margin: 5px
+  position: absolute
+  bottom: 1rem
+  top: 0
+  border-radius: 5px
+  
+
+  display: block
+  overflow-y: scroll
+
+  hr
+    margin-left: -1.25rem
+    margin-right: -1.25rem
+    margin-top: 1.15rem
+    background-color: $primary
+  ul
+    display: flex
+    justify-content: center
+
+  label
+    font-size: .85rem
+    margin-top: 1rem
+  
+  button, a
+    margin-top: 1rem
+    font-size: .85rem
+
+
+
+  .panel-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: -.85rem
+
+    h1
+      color: $primary
+  
+    svg
+      background-color: inherit
+      border: none 
+      vertical-align: middle
+      width: 1.15rem
+      height: 1.15rem
+
+.panel-left
+  -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+
+ 
+.select-pill-left
+  border-top-left-radius: 2rem
+  border-bottom-left-radius: 2rem
+.select-pill-right
+  border-top-right-radius: 2rem
+  border-bottom-right-radius: 2rem
+
+.select-pill-left, .select-pill-right
+  width: 6rem
+  svg
+    stroke: currentColor
+    padding-right: 0.25rem 
+    

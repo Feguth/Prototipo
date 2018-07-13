@@ -1,105 +1,58 @@
-<style>
-  .panel {width: 25%;
-    padding: 1.25rem;
-    margin: 5px;
-    position: absolute;
-    bottom: 1rem;
-    top:0;
-    border-radius: 5px;
-    
-    color: #4a4a4a;
-    display: block;
-    overflow-y: scroll;
-    }
-  .panel-left {
-    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    }
-  .panel-menu {
-    margin-top: 0.75rem}
+<div class="panel-header">
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#file-text" />
+  </svg>
+  <h1>Document</h1>
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#x" />
+  </svg>
+</div>
+<hr>
 
-  .panel-list {border-radius: 2px;
-    color: #707070;
-    display: block;
-    padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem
-    }
-    
-</style>
 
-<div class="panel panel-left">
-
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
-    <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
-    <p style="font-size:larger; color:#262626; padding-left:0.5rem">Document</p>
-    <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:x-large; color:#262626"></button>
-   </div>
   
-{{!-- <div style="margin-top:3rem; margin-bottom:3rem">
-    <p class="control has-icons-left">
-      <input class="input is-small" type="text" placeholder="search">
-      <span class="icon is-small is-left">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </span>
-    </p>
-</div> --}}
+<label class="label has-text-grey">View:</label>
 
-<hr style="background-color: #dbdbdb;
-  height: 1px;
-  margin: 0.75rem -1.25rem 2rem 
-  ">
+<ul>
+  <li>
+    <a class="button has-icon is-primary select-pill-left">
+      <svg class="feather-icon  smaller">
+        <use xlink:href="feather-sprite.svg#feather" />
+      </svg>Write
+    </a>
+  </li>
+  <li>
+    <a class="button is-white select-pill-right">
+      <svg class="feather-icon smaller">
+        <use xlink:href="feather-sprite.svg#file-text" />
+      </svg>
+      Preview
+    </a>
+  </li>
+</ul>
 
-<div>
 
-  <p class="panel-menu">
-    View   
-    <div style="margin:0.75rem 0; font-size:0.9rem;">
-    <ul style="display:flex; justify-content:center">
-    <li>      
-      <a class="button has-icon is-info" style="border-top-left-radius: 290486px;border-bottom-left-radius: 290486px; padding:0 2.75rem">
-    <svg style="stroke: currentColor; padding-right:0.25rem" class="feather-icon"><use xlink:href="feather-sprite.svg#feather" /></svg>Write
-    </a></li> 
+<label class="label has-text-grey">Template:</label>
+
+
+<button class="button is-primary is-fullwidth">Change Template</button>
+
+
+<label class="label has-text-grey">Export:</label>
+
+<ul>
+  <div style="flex:50%">
     <li>
-      <a class="button is-light" style="border-top-right-radius: 290486px; border-bottom-right-radius: 290486px;color:#4a4a4a; padding:0 2.25rem">
-      <svg style="stroke: currentColor; padding-right:0.25rem" class="feather-icon"><use xlink:href="feather-sprite.svg#file-text" /></svg>
-    Preview
-    </a></li> 
-  </ul>
-  </div>
-  <div>
-    thumbnail
-  </div>
-  <div style="display:flex; justify-content:center; font-size: 0.9rem">
-    <button style="margin:1rem 0" class="button is-warning">Change Template</button>
-  </div>
-  </p>
-  
-  {{!-- <p class="panel-menu">
-    Ambience
-    <ul">
-    <li><a>Cafe in Paris</a> 
-    </li> 
-    <li><a>Rain</a></li>
-  </ul>
-
-  </p> --}}
-  
-
-  
-  <p class="panel-menu">
-    Export
-    <ul class="panel-list" style="display: flex">
-    <div style="flex:50%">
-     <li>
       <input type="radio" name="export" value="pdf" checked>
       <label class="container">PDF</label>
     </li>
-    
+
     <li>
       <input type="radio" name="export" value="docx">
       <label class="container">DOCX</label>
     </li>
-    </div>
-    <div style="flex:50%">
+  </div>
+  <div style="flex:50%">
     <li>
       <input type="radio" name="export" value="latex">
       <label class="container">LATEX</label>
@@ -107,30 +60,13 @@
     <li>
       <input type="radio" name="export" value="html">
       <label class="container">HTML</label>
-      </li>
-      </div>
-  </ul>
-  </p>
-  <div>
-    <button style="margin:1rem 0" class="button is-primary is-fullwidth">Export</button>
+    </li>
   </div>
-<hr style="background-color: #dbdbdb;
-  border: none;
-  height: 1px;
-  margin-top:2rem
-  ">
-    <p class="panel-menu">
-    Statistics
-    <ul class="panel-list">
-    <li>Pages: <span style="color:#929292">1</span></li>
-    <li>Words: <span style="color:#929292">42</span></li>
-    <li>Sections: <span style="color:#929292">1</span></li>
-    <li>Time spent by you: <span style="color:#929292">1h33m</span></li>
-    <li>Time spent overall: <span style="color:#929292">2h06m</span></li>
-  </ul>
-  </p>
-</div>
-</div>
+</ul>
+
+<button class="button is-primary  is-fullwidth">Export</button>
+
+
 
 
 
