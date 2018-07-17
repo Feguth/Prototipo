@@ -1,0 +1,130 @@
+<style>
+  .nav-panel {width: 25%;
+    padding: 1.25rem;
+    margin: 5px;
+    position: absolute;
+    bottom: 1rem;
+    top:0;
+    border-radius: 5px;
+    color: whitesmoke;
+    display: block;
+    overflow-y: scroll;
+    background-color:rgb(14, 14, 59)
+  }
+    
+  .panel-left {
+    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    }
+  .panel-menu {
+    margin-top: 0.75rem}
+
+  .panel-list {border-radius: 2px;
+    color: #707070;
+    display: block;
+    padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem
+    }
+  
+  h1{
+      font-size:larger; 
+      color:rgb(240, 131, 29); 
+      padding-left:0.5rem; 
+      font-size:2rem
+  }
+ .nav-panel-heading {
+    display:flex; 
+    align-items:center; 
+    margin-top: -0.5rem;
+  
+ }
+
+ hr {
+  background-color: #dbdbdb;
+  height: 1px;
+  margin: 0.75rem -1.25rem 2rem 
+ }
+ul {
+  margin:0.5rem 1rem; 
+  font-size:0.8rem;
+  color: whitesmoke
+}
+li {
+  margin:0.5rem 0 0 0;
+  color: whitesmoke
+}
+
+.div-avatar{
+  position:absolute; 
+  bottom:1rem; 
+  background-color:inherit ; 
+  display:flex; 
+  align-items:center
+}
+
+</style>
+
+<div class="nav-panel panel-left">
+
+  <div class="nav-panel-heading">
+    <svg style="stroke:whitesmoke; width: 40; height: 40" class="feather-icon"><use xlink:href="feather-sprite.svg#image" /></svg>
+    <h1>Acme.inc</h1>
+    
+   </div>
+
+<hr>
+
+<div>
+
+  <div>
+  <p class="control has-icons-left">
+      <input class="input is-small" type="text" placeholder="search" style="border-radius: 17px">
+      <span class="icon is-small is-left">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+    </p>
+    </div>
+  
+  <div>
+      <p class="is-icon" style="margin:1rem 0">
+    <svg style="stroke:whitesmoke; padding-right:0.25rem; vertical-align:bottom" 
+    class="feather-icon"><use xlink:href="feather-sprite.svg#bell" /></svg>Updates (2)
+    </p>
+    </div>
+
+    <div>
+       <p style="margin-top:2rem">Recent documents 
+            <ul>
+                <li><a href="">Superrocket Dev Loan Agreement</a></li>
+                <li><a href="">Soul Sell Ethernal Contract</a></li>
+                <li><a href="">Esbornia Independence Letter</a></li>
+            </ul>   
+        </p> 
+        <p style="margin-top:2rem">Workspaces 
+            <ul>
+                <li><a href="">Legal</a> </li>
+                <li><a href="">Marketing</a> </li>
+                <li><a href="">A Team</a></li>
+            </ul>   
+        </p> 
+        <p style="margin-top:2rem">Snippets 
+            <ul>
+                <li><a href="">Superrocket Dev Loan Agreement</a></li>
+                <li><a href="">Soul Sell Ethernal Contract</a></li>
+                <li><a href="">Esbornia Independence Letter</a></li>
+            </ul>   
+        </p> 
+    </div>
+    <div class="div-avatar">
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Felipe Cerqueira Guth" 
+                    email="feguth@gmail.com" 
+                    size=200}}</span>
+                    <p style="color:whitesmoke; margin-bottom:0.54rem;  font-size:medium">FELIPE GUTH</p>
+    </div>
+</div>
+</div>
+
+
+
