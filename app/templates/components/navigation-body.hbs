@@ -2,7 +2,7 @@
     .nav-banner {
         width:100%; 
         height:9rem; 
-        background:linear-gradient(to bottom, #fcd361 0%, rgb(238, 185, 38) 100%); 
+        background:linear-gradient(to bottom, #f7e47d 0%, #f8dc5f 100%); 
         display:flex;
     
     }
@@ -11,7 +11,7 @@
         display:flex; 
         flex-wrap: wrap;
         justify-content:space-around;
-        margin-left:26%;
+        margin-left:21%;
         overflow:auto;
         height:41rem;
         
@@ -20,14 +20,14 @@
     .doc-box {
         margin:5rem 0 0 0.5rem; 
         background-color:lavender;
-        width:26rem;
-        height:12.5rem;  
+        width:21.5rem;
+        height:11.5rem;  
                
     }
     
     .nav-thumbs {
-        width:9rem;
-        height:12rem;
+        width:8rem;
+        height:11rem;
         border:3px solid rgb(186, 212, 236); 
         margin:-3rem auto auto 0.8rem;
         z-index: 0 ;
@@ -42,7 +42,7 @@
 
 <div class="nav-banner">
     
-    <p style="margin:0 0 0.4rem 28%; font-size:2rem; color:whitesmoke; align-self:flex-end ">Marketing</p>
+    <p style="margin:0 0 0.4rem 24%; font-size:1.75rem; color:whitesmoke; align-self:flex-end ">Marketing</p>
     <div style="margin: 1rem 1rem auto auto">
         <a class="button is-primary" style="margin-right:1rem; background-color:tomato">Import</a>
         <a class="button is-danger" style="margin-right:1rem; background-color:tomato">New Document</a>
@@ -52,7 +52,7 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
@@ -84,7 +84,7 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
@@ -116,7 +116,7 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
@@ -148,7 +148,39 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
+            <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
+            <p style="font-size: 0.8rem">by Felipe</p><br/>
+            <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
+        </div>
+        </div>
+        
+        <div>
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Felipe Cerqueira Guth" 
+                    email="feguth@gmail.com" 
+                    size=180}}</span>   
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Frederico Guth" 
+                    email="fredguth@gmail.com" 
+                    size=200}}</span>  
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Shanna Lima" 
+                    email="shannalima@gmail.com" 
+                    size=200}}</span>  
+                   
+        </div>
+    </div>
+    <div class="doc-box">
+        <div class="doc-info">
+        <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
@@ -180,7 +212,7 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
@@ -212,7 +244,71 @@
     <div class="doc-box">
         <div class="doc-info">
         <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
-        <div style="margin:0.5rem auto 0.5rem 0; display:wrap; flex-wrap: wrap">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
+            <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
+            <p style="font-size: 0.8rem">by Felipe</p><br/>
+            <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
+        </div>
+        </div>
+        
+        <div>
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Felipe Cerqueira Guth" 
+                    email="feguth@gmail.com" 
+                    size=200}}</span>   
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Frederico Guth" 
+                    email="fredguth@gmail.com" 
+                    size=200}}</span>  
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Shanna Lima" 
+                    email="shannalima@gmail.com" 
+                    size=200}}</span>  
+                   
+        </div>
+    </div>
+    <div class="doc-box">
+        <div class="doc-info">
+        <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
+            <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
+            <p style="font-size: 0.8rem">by Felipe</p><br/>
+            <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
+        </div>
+        </div>
+        
+        <div>
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Felipe Cerqueira Guth" 
+                    email="feguth@gmail.com" 
+                    size=200}}</span>   
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Frederico Guth" 
+                    email="fredguth@gmail.com" 
+                    size=200}}</span>  
+            <span class="avatar">
+                {{ember-initials/adorable
+                img=""
+                    name = "Shanna Lima" 
+                    email="shannalima@gmail.com" 
+                    size=200}}</span>  
+                   
+        </div>
+    </div>
+    <div class="doc-box">
+        <div class="doc-info">
+        <img src="change-template-thumbnail.png" alt="" class="nav-thumbs">
+        <div style="margin:0.5rem; display:wrap; flex-wrap: wrap">
             <a style="font-size: 0.95rem; font-weight: bold">Superrocket Dev Loan Agreement</a>
             <p style="font-size: 0.8rem">by Felipe</p><br/>
             <p style="font-size: 0.8rem">Last change: 01/06/2018</p>
