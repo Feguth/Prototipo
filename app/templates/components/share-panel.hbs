@@ -1,186 +1,95 @@
-<style>
-  .panel {width: 25%;
-  padding: 1.25rem;
-  margin: 5px;
-  position: absolute;
-  bottom: 1rem;
-  top:0;
-  border-radius: 5px;
-  
-  color: #4a4a4a;
-  display: block;
-  overflow-y: scroll;
-  
-  }
-  .panel-right {
-    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: -0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    right:0;
-  }
-  .panel-menu {
-    margin-top: 0.75rem}
-
-  .panel-list {border-radius: 2px;
-  color: #707070;
-  display: block;
-  padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
-  
-</style>
-
-<div class="panel panel-right">
-  
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
-      <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#share" /></svg>
-      <p style="font-size:larger; color:#262626; padding-left:0.5rem">Share</p>
-      <button style="background-color:inherit; border:none; color:#262626" >
-        <svg style="stroke: currentColor; vertical-align:middle" class="feather-icon"><use xlink:href="feather-sprite.svg#x" /></svg>
-      </button>
-    </div>
-
-
-  <hr style="background-color: #dbdbdb;
-    height: 1px;
-    margin: 0.75rem -1.25rem 2rem">
-
-<div>
-
-  {{!-- <p class="panel-menu">
-    Visibility
-    <div style="margin:0.75rem 0 1.25rem; font-size:0.9rem;">
-    <ul style="display:flex; justify-content:space-between">
-      <li style="display:flex; flex-direction:column; justify-content:center">
-        <a class="button is-white">
-          <svg class="feather-icon">
-            <use xlink:href="feather-sprite.svg#lock" />
-          </svg>
-        </a>
-        <span class="icon-text" style="margin:auto; color: #707070">Private</span>
-      </li>
-      <li style="display:flex; flex-direction:column; justify-content:center">
-        <a class="button is-white">
-          <svg class="feather-icon">
-            <use xlink:href="feather-sprite.svg#users" />
-          </svg>
-        </a>
-        <span class="icon-text" style="margin:auto; color: #707070">Workspace</span>
-      </li>
-      <li style="display:flex; flex-direction:column; justify-content:center">
-        <a class="button is-white">
-          <svg class="feather-icon">
-            <use xlink:href="feather-sprite.svg#globe" />
-          </svg>
-        </a>
-        <span class="icon-text" style="margin:auto; color: #707070">Public</span>
-      </li>
-    </ul>
-    </div>
-  </p> --}}
-
-  <p class="panel-menu">
-    Sharing Status
-    <div style="display:flex">
-    <div class="is-rounded" style="background:rgb(253, 168, 168); width:fit-content; padding:0 0.75rem; border-radius:25px; margin:0.2rem 0 0 1rem">
-      Fred
-      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
-      </button>
-    </div>
-      <span class="icon is-small" style="margin:auto 0.2rem">
-        <i class="fa fa-user"></i>
-        </span>
-    </div>
-    <div style="display:flex">
-      <div class="is-rounded" style="background:rgb(255, 178, 105); width:fit-content; padding:0 0.75rem; border-radius:25px;  margin:0.2rem 0 0 1rem">
-      Stocche Forbes
-      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
-      </button>
-      </div>
-      <span class="icon is-small" style="margin:auto 0.2rem">
-        <i class="fa fa-industry"></i>
-        </span>
-    </div>
-    <div style="display:flex">
-    <div class="is-rounded" style="background:rgb(182, 213, 248); width:fit-content; padding:0 0.75rem; border-radius:25px;  margin:0.2rem 0 0 1rem">
-      Jurídico
-      <button class="ion-ios-close-circle-outline" style="background-color:inherit; border:none; font-size:large; color:#4a4a4a; padding: 0 0 0 0.5rem">
-      </button>
-    </div>
-    <span class="icon is-small" style="margin:auto 0.2rem">
-        <i class="fa fa-users"></i>
-        </span>
-    </div>
-  </p>
-
-<hr style="background-color: #dbdbdb;
-  border: none;
-  height: 1px;
-  margin-top:2rem
-  ">
-
-  <p class="panel-menu">
-    Share
-    <ul class="panel-list" >
-        <li>
-            <label class="checkbox">
-                <input type="checkbox">
-                    Read Only
-            </label></li>
-        <li>
-            <label class="checkbox">
-                <input type="checkbox">
-                    Comment
-            </label></li>
-        <li>
-            <label class="checkbox">
-                <input type="checkbox">
-                    Edit
-            </label></li>
-     </ul>
-    
-    <div class="control" style="width: 100%">
-        <input class="input" type="text" placeholder="Team member">
-      </div>
-    
-    <div>
-    <button style="margin:1rem 0" class="button is-primary is-fullwidth">Share</button>
-    </div>
-  </p>
-  
-  
-
-  <p class="panel-menu">
-    Share with Link
-    
-    <div class="field has-addons" style="display:flex">
-      <div class="control" style="width: 75%">
-        <input class="input" type="text" placeholder="http://onefinaldoc.com/873y4tbi7s3yitb7wy34it">
-      </div>
-      <div class="control" style="width: 25%">
-        <a class="button is-info is-fullwidth">
-          <svg class="feather-icon">
-            <use xlink:href="feather-sprite.svg#copy" />
-          </svg>
-        </a>
-      </div>
-
-    </div>
-
-     {{!-- <div>
-    <button style="margin:1rem 0" class="button is-danger is-fullwidth">Copy link</button>
-    </div> --}}
-
-  </p>
-   
-  
-    
+<div class="panel-header">
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#share" />
+  </svg>
+  <h1>share</h1>
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#x" />
+  </svg>
 </div>
+<hr>
+
+
+<label class="label has-text-grey">Sharing Status</label>
+
+<div class="tags">
+  <span class="tag is-success">
+    <svg class="feather-icon is-small">
+      <use xlink:href="feather-sprite.svg#user" />
+    </svg> Fred
+    <button class="delete is-small"></button>
+  </span>
+  <span class="tag is-danger">
+    <svg class="feather-icon is-small">
+      <use xlink:href="feather-sprite.svg#corporate" />
+    </svg> Stoche Forbes
+    <button class="delete is-small"></button>
+  </span>
+  <span class="tag is-success">
+    <svg class="feather-icon is-small">
+      <use xlink:href="feather-sprite.svg#users" />
+    </svg> Jurídico
+    <button class="delete is-small"></button>
+  </span>
 </div>
-    
-    
-    
-    
-    
-    
 
+<hr>
 
+<label class="label has-text-grey">Share:</label>
+<ul>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox"> Read Only
+    </label>
+  </li>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox"> Comment
+    </label>
+  </li>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox"> Edit
+    </label>
+  </li>
+</ul>
 
-
+<div class="field has-addons  button-frame">
+  <p class="control is-expanded">
+    <input class="input" type="text" placeholder="Team member">
+  </p>
+  <p class="control">
+    <a class="button is-primary">
+      Share
+    </a>
+  </p>
+</div>
+<hr>
+<label class="label has-text-grey">Share with link:</label>
+<ul>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox"> Read Only
+    </label>
+  </li>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox"> Comment
+    </label>
+  </li>
+  <li>
+    <label class="checkbox">
+      <input type="checkbox" checked> Edit
+    </label>
+  </li>
+</ul>
+<div class="field has-addons  button-frame">
+  <p class="control is-expanded">
+    <input class="input" type="text" placeholder="http://onefinaldoc.com/873y4tbi7s3yitb7wy34it">
+  </p>
+  <p class="control">
+    <a class="button is-primary">
+     Copy
+    </a>
+  </p>
+</div>
