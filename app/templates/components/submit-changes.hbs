@@ -1,88 +1,32 @@
-<style>
-  .panel {width: 25%;
-  padding: 1.25rem;
-  margin: 5px;
-  position: absolute;
-  bottom: 1rem;
-  top:0;
-  border-radius: 5px;
-  
-  color: #4a4a4a;
-  display: block;
-  overflow-y: scroll;
-  
-  }
-  .panel-right {
-    -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: -0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    right:0;
-  }
-  .panel-menu {
-    margin-top: 0.75rem}
-
-  .panel-list {border-radius: 2px;
-  color: #707070;
-  display: block;
-  padding: 0.5em 1rem;font-size:0.9rem; line-height:1.75rem}
-  
-</style>
-
-
-<div class="panel panel-right">
-  
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top: -0.5rem">
-      <svg style="stroke: currentColor" class="feather-icon"><use xlink:href="feather-sprite.svg#corner-up-left" /></svg>
-      <p style="font-size:larger; color:#262626; padding-left:0.5rem">Submit Changes</p>
-      <button style="background-color:inherit; border:none; color:#262626" >
-        <svg style="stroke: currentColor; vertical-align:middle" class="feather-icon"><use xlink:href="feather-sprite.svg#x" /></svg>
-      </button>
-    </div>
-
-
-  <hr style="background-color: #dbdbdb;
-    height: 1px;
-    margin: 0.75rem -1.25rem 2rem">
+<div class="panel-header">
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#corner-up-left" />
+  </svg>
+  <h1>Submit</h1>
+  <svg class="feather-icon">
+    <use xlink:href="feather-sprite.svg#x" />
+  </svg>
+</div>
+<hr>
 
 
 <div>
-    <p style="text-align:center; font-size:1rem; margin:0.5rem 3rem">Your changes will be submited to the analysis nof the author</p>
-    <div style="display:flex; justify-content:space-between; margin: 1rem 0.5rem">
-            <a class="button is-danger" style="width:5rem">
-                <span class="icon is-small">
-                <i class="fa fa-times"></i>
-                </span>
-                <span>Cancel</span>
-            </a>
-            <a class="button is-success" style="width:5rem">
-                <span class="icon is-small">
-                <i class="fa fa-check"></i>
-                </span>
-                <span>OK</span>
-            </a>
-            </div>
-    <p style="text-align:center; font-size:0.8rem; margin:1rem 3rem">This branch is up to date</p>
+  <center>
+  <p>Your changes will be submited to the analysis nof the author</p>
+  <div style="display:flex; justify-content:space-between; margin: 1rem 0.5rem">
+    <a class="button is-danger" style="width:5rem">
+      <span class="icon is-small">
+        <i class="fa fa-times"></i>
+      </span>
+      <span>Cancel</span>
+    </a>
+    <a class="button is-success" style="width:5rem">
+      <span class="icon is-small">
+        <i class="fa fa-check"></i>
+      </span>
+      <span>OK</span>
+    </a>
+  </div>
+  <span class="content is-small">This branch is up to date</span>
+  </center>
 </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
