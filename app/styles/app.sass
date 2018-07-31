@@ -1,5 +1,10 @@
-$primary: #2f59c4
+$primary: #35456C
+$link: #2e64dc
+$success: #609267
+$danger: #e56661
+$warning: #ddb31a
 $primary-invert: white
+$warning-invert: white
 
 @import "ember-bulma-css/utilities/_all"
 @import "ember-bulma-css/base/_all"
@@ -108,18 +113,19 @@ svg
 
 .panel 
   width: 25%
-  background-color: #fafafa
+  background-color: #f7f1eb
   padding: 1.25rem
   margin: 5px
   position: absolute
-  bottom: 1rem
-  top: 0
-  border-radius: 5px
-  
 
+  border-radius: 5px
+  top: 0
   display: block
   overflow-y: scroll
+  z-index: 10
 
+  &:not(:last-child) 
+    margin-bottom: .5rem
   hr
     margin-left: -1.25rem
     margin-right: -1.25rem
@@ -153,6 +159,7 @@ svg
     justify-content: space-between
     align-items: center
     margin: -.85rem
+    background-color: #f7f1eb
 
     h1
       color: $primary
@@ -167,7 +174,7 @@ svg
 .panel-left
   -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
   box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
-
+  left: 0
 .panel-right
   -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
   box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
