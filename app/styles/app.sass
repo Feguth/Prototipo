@@ -55,6 +55,7 @@ body
   flex: 2
   display: flex
   justify-content: center 
+  z-index: 10
   > ul 
     display: flex
     list-style: none
@@ -83,6 +84,7 @@ body
   stroke-linecap: round
   stroke-linejoin: round
   fill: none
+
 
 h1
   font-weight: 500
@@ -122,7 +124,7 @@ svg
   top: 0
   display: block
   overflow-y: scroll
-  z-index: 10
+  z-index: 11
 
   &:not(:last-child) 
     margin-bottom: .5rem
@@ -209,7 +211,7 @@ svg
   padding: 20px
   border: 1px solid #888
   width: 72%
-  height:fit-content
+  height: fit-content
   border-radius: 5px
 
 .close 
@@ -246,5 +248,53 @@ svg
 
 .template-name 
   width: 180px
-  text-align:center 
+  text-align: center 
   margin: -0.5rem 1.8rem 1rem
+
+.preview-background 
+  display: none
+  position: fixed 
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+
+.prev-back 
+  background: linear-gradient(to bottom, #f8fafd 0%, #c9cbeb 100%)
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: fit-content
+  overflow: auto
+    
+.preview 
+  width: 50rem
+  height: 60rem
+  margin: 0.5rem 5rem
+  border-radius: 5px
+  -webkit-box-shadow: 0 20px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  box-shadow: 0.3rem 0.3rem 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+    
+.prev-doc-name 
+  z-index: 11 
+  width: 75%
+  display: flex
+  margin: 0 0 0 auto
+    
+
+.prev-icon-ul 
+  position: absolute
+  right: 2rem
+  top: 5rem
+  display: flex
+  flex-direction: column
+  align-items: center     
+    
+.prev-icon-li 
+  margin-top: 1.5rem
+  width: 2.5rem
+  height: 2.5rem
